@@ -5,14 +5,13 @@
 
 html,body {
   height: 100%;
-  /*background-color: rgb(29, 29, 29);*/
-  background-color: blueviolet;
+  background-color: rgb(29, 29, 29);
   background-image: url("home-page.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  
+  opacity: .9;
 }
 
 .wrapper {
@@ -63,3 +62,15 @@ button {
 .about {
   margin-right: 1.25em;
 }
+
+.quote {
+  margin-top: 7em;
+  margin-left: 5em;
+  font-size: 2.75em;
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+}
+
+
+
