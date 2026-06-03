@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,body {
+  height: 100%;
+  /*background-color: rgb(29, 29, 29);*/
+  background-color: blueviolet;
+  background-image: url("home-page.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+}
+
+.wrapper {
+  color: white;
+  margin-top: 5em;
+  margin-left: 13em;
+  margin-right: 4em;
+
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2em;
+}
+
+nav ul {
+  display: flex;
+  gap: 3em;
+}
+
+li {
+  list-style-type: none;
+}
+
+.restaurant-title {
+  font-family: "Whisper", cursive;
+  font-weight: 550;
+  font-style: normal;
+  font-size: 7em;
+  letter-spacing: 4px;
+}
+
+button {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.5em;
+  font-weight: 550;
+  font-style: normal;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+}
+
+.about {
+  margin-right: 1.25em;
+}
