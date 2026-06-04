@@ -2,24 +2,20 @@
 
 
 import "./styles.css";
-import { greeting } from "./module-1.js";
+import { renderHomePage } from "./home-module.js";
+import { greetingTwo } from "./module-2.js";
 
-console.log(greeting);
-
-function homePage(){
-
- const restaurantTitle = document.querySelector(".restaurant-title");
- console.log(restaurantTitle);
-
- const titleOfRestaurant = document.createElement("div");
-
- console.log(titleOfRestaurant); //just some testing
+console.log(greetingTwo);
 
 
-}
-
-homePage();
+renderHomePage();
 
 
+
+const homeButton = document.getElementById("home");
+
+const resetHomePage = homeButton.addEventListener("click", () => {
+    window.location.reload();
+});
 
 
