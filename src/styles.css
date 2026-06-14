@@ -18,7 +18,6 @@ html,body {
   margin-top: 5em;
   margin-left: 13em;
   margin-right: 4em;
-
 }
 
 header {
@@ -58,10 +57,6 @@ button {
 
 }
 
-.about {
-  margin-right: 1.25em;
-}
-
 #quote {
   margin-top: 7em;
   margin-left: 5em;
@@ -76,7 +71,7 @@ button {
   flex-direction: column;
   margin-left: 12em;
   margin-right: 12em;
-  background-color: white;
+  background-color: rgb(255, 223, 223);
   color: black;
   border-radius: 4px;
   max-width: 50%;
@@ -114,9 +109,56 @@ button {
 
 #about-container {
   display: grid;
-  background-color: white;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+  grid-template-rows: repeat(20, minmax(0, 1fr));
+  background-color: rgb(255, 223, 223);
   color: black;
+  border-radius: 4px;
+
 }
+
+.para {
+  grid-column: 2 / 5;
+  grid-row: 5 / 17;
+   font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-weight: 550;
+}
+
+.about-pic {
+  background-image: url("about-pic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-column: 6 / 10;
+  grid-row: 1 / 15;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.contact-div {
+  grid-column: 5 / 7;
+  grid-row: 16 / 22;
+  background-color: black;
+  color: rgb(255, 223, 223);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  padding-top: 4px;
+
+}
+
+.contact-color{
+  color: rgb(8, 149, 214);
+}
+
 
 
 

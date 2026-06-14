@@ -25,7 +25,7 @@ export function handleMenuClick(event, wrapper){
     appTitle.append(appOneDescription);
 
     const appTwo = document.createElement("div");
-    appTwo.textContent = "Mussels FrA Diavolo";
+    appTwo.textContent = "Mussels Fra Diavolo";
     appTwo.classList.add("plates");
     appTitle.append(appTwo);
 
@@ -194,7 +194,7 @@ export function handleMenuClick(event, wrapper){
     dessertTwoDescription.classList.add("plate-descriptions");
     dessertTitle.append(dessertTwoDescription);    
 
-
+    //end of dessert items
 
 
     
