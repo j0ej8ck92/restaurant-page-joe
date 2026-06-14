@@ -2,8 +2,10 @@
 
 
 import "./styles.css";
-import { handleHomeQuote } from "./home-module.js";
+import { handleHomeQuoteClick } from "./home-module.js";
 import { handleMenuClick, greetingTwo } from "./menu-module.js";
+import { handleAboutClick } from "./about-module.js";
+import { handleBookNowClick } from "./book-now-module.js";
 
 console.log(greetingTwo);
 
@@ -80,18 +82,29 @@ pageWrapper.append(quote);
 
 const homeButton = document.getElementById("home");
 const menuButton = document.getElementById("menu");
+const aboutButton = document.getElementById("about");
+const bookNowButton = document.getElementById("book-now");
 
 const changeToHome = homeButton.addEventListener("click", () => {
-    handleHomeQuote(event,pageWrapper);
+    handleHomeQuoteClick(event,pageWrapper);
 });
 
 const changeToMenu = menuButton.addEventListener("click", () => {
     handleMenuClick(event, pageWrapper);
 });
 
+const changeToAbout = aboutButton.addEventListener("click", () => {
+    handleAboutClick(event, pageWrapper);
+})
+
+const changeToBookNow = bookNowButton.addEventListener("click", () => {
+    handleBookNowClick(event, pageWrapper);
+})
 
 
-function checkVariable(){
+
+
+function checkVariable(){ //Just a test function
     const myVariable = "Sup";
 
     return myVariable;

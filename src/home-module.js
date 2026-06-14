@@ -1,4 +1,4 @@
-export function handleHomeQuote(event, wrapper){
+export function handleHomeQuoteClick(event, wrapper){
     console.log(event.target);
     wrapper.lastElementChild.remove();
     const quote = document.createElement("div");
