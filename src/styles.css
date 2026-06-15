@@ -17,7 +17,7 @@ html,body {
   color: white;
   margin-top: 5em;
   margin-left: 13em;
-  margin-right: 4em;
+  margin-right: 4.7em;
 }
 
 header {
@@ -58,12 +58,12 @@ button {
 }
 
 #quote {
-  margin-top: 8.5em;
-  margin-left: 8em;
+  margin-top: 8.6em;
+  margin-left: 19.5em;
   font-size: 2.75em;
   font-family: "Source Sans 3", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300;
+  font-weight: 350;
 }
 
 #menu-container {
@@ -78,6 +78,7 @@ button {
   min-width: 300px;
   padding-top: 3em;
   padding-bottom: 1.5em;
+  opacity: .9;
   
 }
 
@@ -114,6 +115,8 @@ button {
   background-color: rgb(255, 223, 223);
   color: black;
   border-radius: 4px;
+  opacity: .9;
+
 
 }
 
@@ -162,6 +165,79 @@ button {
   color: rgb(8, 149, 214);
 }
 
+#submit, #cancel{
+  color: black;
+}
 
+dialog::backdrop {
+    min-height: 100vh;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    backdrop-filter: blur(3px);
+}
 
+.dialog-content {
+    
+    width: 350px;
+    height: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+    background-color: rgb(255, 223, 223);
+    
+}
 
+#form {
+    width: 100%; 
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: rgb(255, 223, 223);
+    border-radius: 6px;
+    margin-top: 1em;
+}
+
+.form-div {
+    display: grid;
+    padding-bottom: 1em;
+}
+
+input {
+    font: inherit;
+    outline: none;
+    color: black;
+    background-color: rgb(255, 223, 223);
+    border-radius: 6px;
+}
+
+input[type="number"], input[type="datetime-local"], input[type="text"] {
+  padding-left: 5em;
+}
+
+label {
+    margin-bottom: .75em;
+}
+
+#submit, #cancel {
+    background: var(--color-back);
+    border-radius: 0.5em;
+    box-shadow:
+        inset 0px -6px 18px -6px rgba(3, 15, 20, 0),
+        inset rgba(54, 69, 75, 1) -1px -1px 6px 0px,
+        inset 12px 0px 12px -6px rgba(3, 15, 20, 0),
+        inset -12px 0px 12px -6px rgba(3, 15, 20, 0),
+        rgba(54, 69, 75, 1) -1px -1px 6px 0px;
+    border: solid .2px #030f14;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0.7em 1.7em;
+    outline: none;
+    transition: all 0.3s;
+    user-select: none;
+    color: black;
+}
