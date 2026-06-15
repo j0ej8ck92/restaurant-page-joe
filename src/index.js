@@ -1,13 +1,9 @@
-//Home Page 4 Restaurant
-
-
 import "./styles.css";
 import { handleHomeQuoteClick } from "./home-module.js";
 import { handleMenuClick, greetingTwo } from "./menu-module.js";
 import { handleAboutClick } from "./about-module.js";
 import { handleBookNowClick } from "./book-now-module.js";
 
-console.log(greetingTwo);
 
 
 const body = document.body;
@@ -78,39 +74,26 @@ pageWrapper.append(quote);
 
 //End of HomePage....for making elements
 
-
-
 const homeButton = document.getElementById("home");
 const menuButton = document.getElementById("menu");
 const aboutButton = document.getElementById("about");
 const bookNowButton = document.getElementById("book-now");
 
 const changeToHome = homeButton.addEventListener("click", () => {
-    handleHomeQuoteClick(event,pageWrapper);
+    handleHomeQuoteClick(pageWrapper);
 });
 
 const changeToMenu = menuButton.addEventListener("click", () => {
-    handleMenuClick(event, pageWrapper);
+    handleMenuClick(pageWrapper);
 });
 
 const changeToAbout = aboutButton.addEventListener("click", () => {
-    handleAboutClick(event, pageWrapper);
+    handleAboutClick(pageWrapper);
 })
 
 const changeToBookNow = bookNowButton.addEventListener("click", () => {
-    handleBookNowClick(event, pageWrapper);
+    handleBookNowClick(pageWrapper);
 })
 
 
-
-
-function checkVariable(){ //Just a test function
-    const myVariable = "Sup";
-
-    return myVariable;
-}
-
-
-
-console.log(checkVariable());
 

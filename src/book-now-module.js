@@ -1,11 +1,9 @@
-export function handleBookNowClick(event, wrapper){
-    console.log(event.target);
+export function handleBookNowClick(wrapper){
     wrapper.lastElementChild.remove();
     const bookNowContainer = document.createElement("div");
     bookNowContainer.id = "book-now-container";
     wrapper.append(bookNowContainer);
 
-    //Start of creating Dialog for Form
     const dialog = document.createElement("dialog");
     dialog.id = "book-now-dialog";
     bookNowContainer.append(dialog);
@@ -107,7 +105,6 @@ export function handleBookNowClick(event, wrapper){
 
     dialog.showModal();
 
-   
     formCancelButton.addEventListener("click", function() {
         dialog.close();
     })
@@ -116,11 +113,7 @@ export function handleBookNowClick(event, wrapper){
         console.log(event);
         event.preventDefault();
         console.log(inputOne.value, inputTwo.value, inputThree.value, inputFour.value);
-
         dialog.close();
         form.reset();
-
-
     })
-
 }

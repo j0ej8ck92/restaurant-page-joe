@@ -217,6 +217,7 @@ input {
 
 input[type="number"], input[type="datetime-local"], input[type="text"] {
   padding-left: 5em;
+  height: 2em;
 }
 
 label {

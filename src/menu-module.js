@@ -1,13 +1,8 @@
-export const greetingTwo = "Hello Fartsniffer!";
-
-
-export function handleMenuClick(event, wrapper){
-    console.log(event.target);
+export function handleMenuClick(wrapper){
     wrapper.lastElementChild.remove();
     const menuContainer = document.createElement("div");
     menuContainer.id = "menu-container";                  
     wrapper.append(menuContainer);
-    // end of how to remove last div and add new div to give new display
 
     const appTitle = document.createElement("div");
     appTitle.textContent = "Apps";
@@ -43,7 +38,6 @@ export function handleMenuClick(event, wrapper){
     appThreeDescription.textContent = "black tiger shrimp, garlic, flatbread, sorrel";
     appThreeDescription.classList.add("plate-descriptions");
     appTitle.append(appThreeDescription);
-
     //end of Apps
 
     const mainsTitle = document.createElement("div");
@@ -91,7 +85,7 @@ export function handleMenuClick(event, wrapper){
     mainFourDescription.classList.add("plate-descriptions");
     mainsTitle.append(mainFourDescription);
 
-    const mainFourDescriptionB = document.createElement("div"); //second line of description
+    const mainFourDescriptionB = document.createElement("div"); 
     mainFourDescriptionB.textContent = "green garlic grenobloise";
     mainFourDescriptionB.classList.add("plate-descriptions");
     mainsTitle.append(mainFourDescriptionB);
@@ -106,11 +100,10 @@ export function handleMenuClick(event, wrapper){
     mainFiveDescription.classList.add("plate-descriptions");
     mainsTitle.append(mainFiveDescription);
 
-    const mainFiveDescriptionB = document.createElement("div"); //second line of description
+    const mainFiveDescriptionB = document.createElement("div"); 
     mainFiveDescriptionB.textContent = "fingerling potatoes, pearl onions, shallots, fine herbs sauce";
     mainFiveDescriptionB.classList.add("plate-descriptions");
     mainsTitle.append(mainFiveDescriptionB);
-
     //end of Mains
 
     const toShareTitle = document.createElement("div");
@@ -162,12 +155,11 @@ export function handleMenuClick(event, wrapper){
     toShareTitle.append(toShareFourDescription);
 
 
-    const toShareFourDescriptionB = document.createElement("div"); //second line of description
+    const toShareFourDescriptionB = document.createElement("div");
     toShareFourDescriptionB.textContent = "carrot salad, cauliflower salad, cucumber salad, deviled egg";
     toShareFourDescriptionB.classList.add("plate-descriptions");
     toShareTitle.append(toShareFourDescriptionB);
-
-    //end of share items
+    //end of To Share
 
     const dessertTitle = document.createElement("div");
     dessertTitle.textContent = "Afters";
@@ -193,12 +185,5 @@ export function handleMenuClick(event, wrapper){
     dessertTwoDescription.textContent = "bourbon caramel glaze";
     dessertTwoDescription.classList.add("plate-descriptions");
     dessertTitle.append(dessertTwoDescription);    
-
-    //end of dessert items
-
-
-    
-
-
-   
+    //end of Afters
 }
